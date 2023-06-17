@@ -1,0 +1,69 @@
+/* Global styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Home section styling */
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#home video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.home-content h1 {
+  font-size: 4em;
+}
+
+.home-content p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.home-content .portfolio-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-content .portfolio-btn:hover {
+  background: white;
+  color: black;
+}
+

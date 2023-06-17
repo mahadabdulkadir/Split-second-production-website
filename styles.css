@@ -1,0 +1,165 @@
+/* Your custom CSS styles */
+/* Global styling */
+:root {
+  --second-bg-color: #323946; /* Replace #ff0000 with your desired color */
+  --bg-color: #1f242d;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+/* Rest of your CSS code */
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Home section styling */
+#home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#home .video-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for the video */
+  overflow: hidden;
+}
+#scrollButton {
+    display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} 
+#scrollButton:hover {
+  background: white;
+  color: black;
+}
+#home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.home-content h1 {
+  font-size: 2.5em;
+}
+
+.home-content p {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+  .heading {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    font-size: 6rem;
+  }
+
+
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  transition: .5 ease;
+  filter: grayscale(0);
+}
+.portfolio-box:hover img {
+  transform: scale(1.03);
+  filter: grayscale(100%);
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rbha(0, 0, 255, .1 ), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: .5 ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 1.5rem;
+}
+.portfolio-layer p {
+  font-size: 0.8rem;
+  margin: .3rem 0 0.5rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
