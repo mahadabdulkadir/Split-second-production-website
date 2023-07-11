@@ -103,10 +103,32 @@ body {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .portfolio-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
 .portfolio-container .portfolio-box {
   position: relative;
