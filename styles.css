@@ -1,7 +1,8 @@
 /* Your custom CSS styles */
 /* Global styling */
 :root {
-  --second-bg-color: #323946; /* Replace #ff0000 with your desired color */
+  --second-bg-color: #323946;
+  /* Replace #ff0000 with your desired color */
   --bg-color: #1f242d;
   --text-color: #fff;
   --main-color: #0ef;
@@ -33,11 +34,13 @@ body {
 #home .video-container {
   position: relative;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio for the video */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio for the video */
   overflow: hidden;
 }
+
 #scrollButton {
-    display: inline-block;
+  display: inline-block;
   margin-top: 30px;
   padding: 10px 20px;
   background: none;
@@ -47,11 +50,13 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-} 
+}
+
 #scrollButton:hover {
   background: white;
   color: black;
 }
+
 #home video {
   position: absolute;
   top: 0;
@@ -80,16 +85,16 @@ body {
   font-size: 1em;
 }
 
-  .heading {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: var(--text-color);
-    font-size: 6rem;
-  }
+.heading {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  font-size: 6rem;
+}
 
 
 .portfolio {
-  background: var(--second-bg-color);
+  background: black;
 }
 
 .portfolio h2 {
@@ -104,21 +109,22 @@ body {
 }
 
 .portfolio-container .portfolio-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
 }
 
 .portfolio-box img {
   width: 100%;
   transition: .5 ease;
-  filter: grayscale(0);
+
 }
+
 .portfolio-box:hover img {
   transform: scale(1.03);
-  filter: grayscale(100%);
+  ;
 }
 
 .portfolio-box .portfolio-layer {
@@ -127,7 +133,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rbha(0, 0, 255, .1 ), var(--main-color));
+  background: linear-gradient(rbha(0, 0, 255, .1), var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,13 +144,14 @@ body {
   transition: .5 ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
 }
 
 .portfolio-layer h4 {
   font-size: 1.5rem;
 }
+
 .portfolio-layer p {
   font-size: 0.8rem;
   margin: .3rem 0 0.5rem;
@@ -159,6 +166,7 @@ body {
   background: var(--text-color);
   border-radius: 50%;
 }
+
 .portfolio-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
